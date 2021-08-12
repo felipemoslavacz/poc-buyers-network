@@ -9,8 +9,7 @@ import geojson from "./geojson";
 
 import { MapContainer } from "./styled";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiZ3JlZW53YXZlIiwiYSI6ImNrczY5YnVkZTE0dXoydm9kODg5djlyZWYifQ.DeQaYuUEKlS92-CIhV30AA";
+mapboxgl.accessToken = process.env.MAPBOX_ACESS_TOKEN;
 
 const Map = () => {
   const mapContainer = useRef(null);
