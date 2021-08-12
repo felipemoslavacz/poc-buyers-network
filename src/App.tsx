@@ -1,4 +1,4 @@
-import { Header, Map, ProfilesPanel } from "./components";
+import { Header, Map, ProfilePanel } from "./components";
 
 import { Wrapper, Main } from "./App.styled";
 
@@ -8,7 +8,7 @@ const App = () => {
       <Header />
       <Main>
         <Map />
-        <ProfilesPanel />
+        <ProfilePanel />
       </Main>
     </Wrapper>
   );

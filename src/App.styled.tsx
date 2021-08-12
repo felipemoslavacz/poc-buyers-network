@@ -9,4 +9,5 @@ export const Main = styled.main`
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  height: 700px;
 `;

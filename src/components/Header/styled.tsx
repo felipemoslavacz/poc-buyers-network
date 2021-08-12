@@ -18,9 +18,9 @@ export const TitleContainer = styled.section`
 
 export const Title = styled.h1`
   color: #585858;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1.13px;
   margin: 0;
   padding: 0;
