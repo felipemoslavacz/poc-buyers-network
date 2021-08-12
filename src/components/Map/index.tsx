@@ -63,13 +63,6 @@ const Map = () => {
       setLat(Number(map.current.getCenter().lat.toFixed(4)));
       setZoom(Number(map.current.getZoom().toFixed(2)));
     });
-
-    map.current.on("click", (e) => {
-      if (map.current === null) return;
-      console.log(e);
-      console.log(map.current.getCenter());
-      console.log(map.current.getZoom());
-    });
   });
 
   return (
