@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from "react";
-import mapboxgl, { Map as MapTypes } from "mapbox-gl";
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import mapboxgl, { Map as MapTypes } from "!mapbox-gl";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
