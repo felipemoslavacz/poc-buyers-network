@@ -27,19 +27,14 @@ const Map = () => {
       style: "mapbox://styles/mapbox/light-v10",
       center: [lng, lat],
       zoom: zoom,
+      maxBounds: MAX_BOUNDS,
     });
     map.current.addControl(new mapboxgl.NavigationControl());
 
     geojson.features.forEach(function (marker) {
       if (!map.current) return;
 
-      const el = document.createElement("div");
-      el.className = "marker";
-
-      new mapboxgl.Marker({
-        color: "#565656",
-        scale: 1,
-      })
+      new mapboxgl.Marker(MARKER_OPTIONS)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(
           new mapboxgl.Popup({ offset: 25 }) // add popups
