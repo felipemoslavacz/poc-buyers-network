@@ -25,9 +25,13 @@ export const ProfileItemContainer = styled.div`
     margin: 0 0 5px 0;
   }
 
-  a {
+  button {
+    background: none;
     color: #337cff;
-    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
 `;
 

@@ -22,7 +22,7 @@ const ProfileItem = ({
         <h3>{title}</h3>
         <p>{location}</p>
         <p>{description}</p>
-        <a href="#">View Profile ›</a>
+        <button>View Profile ›</button>
       </div>
     </ProfileItemContainer>
   );

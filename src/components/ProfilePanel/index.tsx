@@ -21,6 +21,7 @@ const ProfilePanel = () => {
         } = feature;
         return (
           <ProfileItem
+            key={id}
             title={title}
             location={location}
             description={description}
