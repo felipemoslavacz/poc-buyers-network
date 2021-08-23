@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const MapContainer = styled.div`
   flex-basis: 70%;
 
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
   .map-container {
     height: 100%;
   }
