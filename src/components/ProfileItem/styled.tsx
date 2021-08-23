@@ -2,11 +2,19 @@ import styled from "styled-components";
 
 export const ProfileItemContainer = styled.div`
   color: #585858;
+  cursor: pointer;
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+  transition: background 0.3s;
+
+  &:hover,
+  &.active {
+    background: rgba(89, 195, 120, 0.35);
+  }
 
   h3 {
     font-size: 14px;

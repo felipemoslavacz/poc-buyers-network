@@ -5,20 +5,33 @@ import { useMap } from "../../hooks/useMap";
 import { ProfileContainer } from "./styled";
 
 const ProfilePanel = () => {
-  const { geojson } = useMap();
+  const {
+    geojson,
+    selectedMarker,
+    setSelectedMarker,
+    handleFlyToInterpolator,
+  } = useMap();
+
   return (
     <ProfileContainer>
-      {geojson.farmers.map(
-        ({ properties: { title, location, description } }) => {
-          return (
-            <ProfileItem
-              title={title}
-              location={location}
-              description={description}
-            />
-          );
-        }
-      )}
+      {geojson.features.map((feature) => {
+        const {
+          id,
+          properties: { title, location, description },
+        } = feature;
+        return (
+          <ProfileItem
+            title={title}
+            location={location}
+            description={description}
+            active={selectedMarker?.id === id ? "active" : ""}
+            onClick={() => {
+              setSelectedMarker(feature);
+              handleFlyToInterpolator(feature);
+            }}
+          />
+        );
+      })}
     </ProfileContainer>
   );
 };
