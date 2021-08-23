@@ -2,13 +2,17 @@ import { Header, Map, ProfilePanel } from "./components";
 
 import { Wrapper, Main } from "./App.styled";
 
+import { MapProvider } from "./hooks/useMap";
+
 const App = () => {
   return (
     <Wrapper>
       <Header />
       <Main>
-        <Map />
-        <ProfilePanel />
+        <MapProvider>
+          <Map />
+          <ProfilePanel />
+        </MapProvider>
       </Main>
     </Wrapper>
   );

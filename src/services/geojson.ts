@@ -1,6 +1,6 @@
 import { LngLatLike } from "mapbox-gl";
 
-interface IFeatures {
+interface IFarmers {
   type: string;
   geometry: {
     type: string;
@@ -13,14 +13,14 @@ interface IFeatures {
   };
 }
 
-interface IGeoJson {
+export interface IGeoJson {
   type: string;
-  features: IFeatures[];
+  farmers: IFarmers[];
 }
 
 const geojson: IGeoJson = {
   type: "FeatureCollection",
-  features: [
+  farmers: [
     {
       type: "Feature",
       geometry: {

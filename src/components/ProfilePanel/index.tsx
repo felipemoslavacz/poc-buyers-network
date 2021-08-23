@@ -1,13 +1,14 @@
 import ProfileItem from "../ProfileItem";
 
+import { useMap } from "../../hooks/useMap";
+
 import { ProfileContainer } from "./styled";
 
-import geojson from "../Map/geojson";
-
 const ProfilePanel = () => {
+  const { geojson } = useMap();
   return (
     <ProfileContainer>
-      {geojson.features.map(
+      {geojson.farmers.map(
         ({ properties: { title, location, description } }) => {
           return (
             <ProfileItem
