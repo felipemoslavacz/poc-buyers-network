@@ -13,7 +13,7 @@ import { useMap } from "../../hooks/useMap";
 import { ReactComponent as PinDefault } from "../../assets/mapbox-marker-icon-gray.svg";
 import { ReactComponent as PinSelected } from "../../assets/mapbox-marker-icon-green.svg";
 
-import { MapContainer } from "./styled";
+import { MapContainer } from "./Map.styled";
 
 const navControlStyle = {
   right: 10,

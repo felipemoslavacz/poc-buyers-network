@@ -1,6 +1,6 @@
 import { ReactComponent as GreenwaveLogo } from "../../assets/logo.svg";
 
-import { HeaderContainer, Logo, Title, TitleContainer } from "./styled";
+import { HeaderContainer, Logo, Title, TitleContainer } from "./Header.styled";
 
 const Header = () => (
   <>

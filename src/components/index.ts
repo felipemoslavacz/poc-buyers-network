@@ -1,5 +1,6 @@
-import Header from "./Header";
-import Map from "./Map";
-import ProfilePanel from "./ProfilePanel";
+import Header from "./Header/Header";
+import Map from "./Map/Map";
+import ProfilePanel from "./ProfilePanel/ProfilePanel";
+import ProfileItem from "./ProfileItem/ProfileItem";
 
-export { Header, Map, ProfilePanel };
+export { Header, Map, ProfilePanel, ProfileItem };

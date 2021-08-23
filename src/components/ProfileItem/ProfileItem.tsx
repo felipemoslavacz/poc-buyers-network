@@ -1,4 +1,4 @@
-import { ProfileItemContainer, Image } from "./styled";
+import { ProfileItemContainer, Image } from "./ProfileItem.styled";
 
 interface IProfileItem {
   title: string;

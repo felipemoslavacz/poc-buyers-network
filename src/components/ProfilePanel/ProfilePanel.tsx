@@ -1,8 +1,7 @@
-import ProfileItem from "../ProfileItem";
-
 import { useMap } from "../../hooks/useMap";
 
-import { ProfileContainer } from "./styled";
+import { ProfileItem } from "../index";
+import { ProfileContainer } from "./ProfilePanel.styled";
 
 const ProfilePanel = () => {
   const {
