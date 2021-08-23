@@ -21,9 +21,26 @@ const navControlStyle = {
 };
 
 const MAX_BOUNDS = [
-  [-82.7778, 37.07214], // New York
-  [-65.32614, 48.09228], // Maine,
+  [-83.35481383125015, 36.91392056290337], // New York
+  [-65.20539976875011, 48.19468396724202], // Maine,
 ];
+
+const isOutOfMaxBounds = (
+  nextSW: number[],
+  nextNE: number[],
+  maxBounds: number[][]
+) => {
+  const [[maxSWLng, maxSWLat], [maxNELng, maxNELat]] = maxBounds;
+  const [nextSWLng, nextSWLat] = nextSW;
+  const [nextNELng, nextNELat] = nextNE;
+
+  return (
+    nextSWLng < maxSWLng ||
+    nextSWLat < maxSWLat ||
+    nextNELng > maxNELng ||
+    nextNELat > maxNELat
+  );
+};
 
 const Map = () => {
   const { viewport, setViewport, geojson, selectedMarker, setSelectedMarker } =
@@ -41,23 +58,6 @@ const Map = () => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const isOutOfMaxBounds = (
-    nextSW: number[],
-    nextNE: number[],
-    maxBounds: number[][]
-  ) => {
-    const [[maxSWLng, maxSWLat], [maxNELng, maxNELat]] = maxBounds;
-    const [nextSWLng, nextSWLat] = nextSW;
-    const [nextNELng, nextNELat] = nextNE;
-
-    return (
-      nextSWLng < maxSWLng ||
-      nextSWLat < maxSWLat ||
-      nextNELng > maxNELng ||
-      nextNELat > maxNELat
-    );
-  };
 
   const onViewportChange = (newViewport: any) => {
     const merc = new WebMercatorViewport(newViewport);
