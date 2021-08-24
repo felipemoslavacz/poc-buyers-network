@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/poc-buyers-network/static/js/main.21d5a228.chunk.js",
-    "main.js.map": "/poc-buyers-network/static/js/main.21d5a228.chunk.js.map",
+    "main.js": "/poc-buyers-network/static/js/main.a62dcaaa.chunk.js",
+    "main.js.map": "/poc-buyers-network/static/js/main.a62dcaaa.chunk.js.map",
     "runtime-main.js": "/poc-buyers-network/static/js/runtime-main.5415567f.js",
     "runtime-main.js.map": "/poc-buyers-network/static/js/runtime-main.5415567f.js.map",
     "static/css/2.5bebb84e.chunk.css": "/poc-buyers-network/static/css/2.5bebb84e.chunk.css",
-    "static/js/2.db60f061.chunk.js": "/poc-buyers-network/static/js/2.db60f061.chunk.js",
-    "static/js/2.db60f061.chunk.js.map": "/poc-buyers-network/static/js/2.db60f061.chunk.js.map",
+    "static/js/2.a290e227.chunk.js": "/poc-buyers-network/static/js/2.a290e227.chunk.js",
+    "static/js/2.a290e227.chunk.js.map": "/poc-buyers-network/static/js/2.a290e227.chunk.js.map",
     "index.html": "/poc-buyers-network/index.html",
     "static/css/2.5bebb84e.chunk.css.map": "/poc-buyers-network/static/css/2.5bebb84e.chunk.css.map",
-    "static/js/2.db60f061.chunk.js.LICENSE.txt": "/poc-buyers-network/static/js/2.db60f061.chunk.js.LICENSE.txt",
+    "static/js/2.a290e227.chunk.js.LICENSE.txt": "/poc-buyers-network/static/js/2.a290e227.chunk.js.LICENSE.txt",
     "static/js/mapbox-gl-csp-worker.0655d48d.worker.js": "/poc-buyers-network/static/js/mapbox-gl-csp-worker.0655d48d.worker.js",
     "static/js/mapbox-gl-csp-worker.0655d48d.worker.js.map": "/poc-buyers-network/static/js/mapbox-gl-csp-worker.0655d48d.worker.js.map",
     "static/media/logo.abd58d38.svg": "/poc-buyers-network/static/media/logo.abd58d38.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.5415567f.js",
     "static/css/2.5bebb84e.chunk.css",
-    "static/js/2.db60f061.chunk.js",
-    "static/js/main.21d5a228.chunk.js"
+    "static/js/2.a290e227.chunk.js",
+    "static/js/main.a62dcaaa.chunk.js"
   ]
 }
