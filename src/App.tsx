@@ -7,13 +7,13 @@ import { MapProvider } from "./hooks/useMap";
 const App = () => {
   return (
     <Wrapper>
-      <Header />
-      <Main>
-        <MapProvider>
+      <MapProvider>
+        <Header />
+        <Main>
           <Map />
           <ProfilePanel />
-        </MapProvider>
-      </Main>
+        </Main>
+      </MapProvider>
     </Wrapper>
   );
 };
