@@ -15,6 +15,13 @@ import { ReactComponent as PinSelected } from "../../assets/mapbox-marker-icon-g
 
 import { MapContainer } from "./Map.styled";
 
+import mapboxgl from "mapbox-gl";
+
+// @ts-ignore
+mapboxgl.workerClass =
+  // eslint-disable-next-line import/no-webpack-loader-syntax
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+
 const navControlStyle = {
   right: 10,
   top: 10,

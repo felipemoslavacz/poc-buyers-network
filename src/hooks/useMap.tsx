@@ -4,6 +4,13 @@ import { FlyToInterpolator } from "react-map-gl";
 
 import geojson, { IGeoJson, IFeatures } from "../services/geojson";
 
+import mapboxgl from "mapbox-gl";
+
+// @ts-ignore
+mapboxgl.workerClass =
+  // eslint-disable-next-line import/no-webpack-loader-syntax
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+
 interface IViewport {
   latitude?: number;
   longitude?: number;
