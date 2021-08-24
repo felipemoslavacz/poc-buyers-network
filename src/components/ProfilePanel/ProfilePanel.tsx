@@ -5,7 +5,7 @@ import { ProfileContainer } from "./ProfilePanel.styled";
 
 const ProfilePanel = () => {
   const {
-    geojson,
+    profiles,
     selectedMarker,
     setSelectedMarker,
     handleFlyToInterpolator,
@@ -13,7 +13,7 @@ const ProfilePanel = () => {
 
   return (
     <ProfileContainer>
-      {geojson.features.map((feature) => {
+      {profiles.features.map((feature) => {
         const {
           id,
           properties: { title, location, description },

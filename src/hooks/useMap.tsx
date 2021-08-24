@@ -28,6 +28,8 @@ export interface MapContextData {
   viewport: IViewport;
   setViewport: React.Dispatch<React.SetStateAction<IViewport>>;
   geojson: IGeoJson;
+  profiles: IGeoJson;
+  setProfiles: React.Dispatch<React.SetStateAction<IGeoJson>>;
   selectedMarker: IFeatures | null;
   setSelectedMarker: React.Dispatch<React.SetStateAction<IFeatures | null>>;
   handleFlyToInterpolator: Function;
@@ -51,6 +53,7 @@ function useProviderMap() {
     zoom: 5,
   });
   const [selectedMarker, setSelectedMarker] = useState<IFeatures | null>(null);
+  const [profiles, setProfiles] = useState(geojson);
 
   function handleFlyToInterpolator(feature: IFeatures) {
     setViewport({
@@ -67,6 +70,8 @@ function useProviderMap() {
     viewport,
     setViewport,
     geojson,
+    profiles,
+    setProfiles,
     selectedMarker,
     setSelectedMarker,
     handleFlyToInterpolator,

@@ -50,8 +50,15 @@ const isOutOfMaxBounds = (
 };
 
 const Map = () => {
-  const { viewport, setViewport, geojson, selectedMarker, setSelectedMarker } =
-    useMap();
+  const {
+    viewport,
+    setViewport,
+    geojson,
+    profiles,
+    setProfiles,
+    selectedMarker,
+    setSelectedMarker,
+  } = useMap();
 
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
@@ -66,14 +73,36 @@ const Map = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const setProfilesOnViewport = (
+    newSouthWest: number[],
+    newNorthEast: number[]
+  ) => {
+    const [nextSWLng, nextSWLat] = newSouthWest;
+    const [nextNELng, nextNELat] = newNorthEast;
+
+    const filteredProfiles = geojson.features.filter((profile) => {
+      const [lng, lat] = profile.geometry.coordinates;
+      return (
+        lng > nextSWLng && lng < nextNELng && lat > nextSWLat && lat < nextNELat
+      );
+    });
+
+    setProfiles({
+      ...profiles,
+      features: filteredProfiles,
+    });
+  };
+
   const onViewportChange = (newViewport: any) => {
     const merc = new WebMercatorViewport(newViewport);
     // fetch the lat/lng of the edges of the viewport
     // measured from topLeft
     const newSouthWest = merc.unproject([0, newViewport.height]);
     const newNorthEast = merc.unproject([newViewport.width, 0]);
+
     if (!isOutOfMaxBounds(newSouthWest, newNorthEast, MAX_BOUNDS)) {
       setViewport(newViewport);
+      setProfilesOnViewport(newSouthWest, newNorthEast);
     }
   };
 
