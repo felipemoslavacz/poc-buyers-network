@@ -14,6 +14,9 @@ export const Logo = styled.div`
 export const TitleContainer = styled.section`
   border-bottom: 1px solid #979797;
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
