@@ -55,12 +55,12 @@ function useProviderMap() {
   const [selectedMarker, setSelectedMarker] = useState<IFeatures | null>(null);
   const [profiles, setProfiles] = useState(geojson);
 
-  function handleFlyToInterpolator(feature: IFeatures) {
+  function handleFlyToInterpolator(coordinates: number[], zoom = 8) {
     setViewport({
       ...viewport,
-      longitude: feature?.geometry.coordinates[0],
-      latitude: feature?.geometry.coordinates[1],
-      zoom: 8,
+      longitude: coordinates[0],
+      latitude: coordinates[1],
+      zoom,
       transitionDuration: 1000,
       transitionInterpolator: new FlyToInterpolator({ speed: 2 }),
     });
