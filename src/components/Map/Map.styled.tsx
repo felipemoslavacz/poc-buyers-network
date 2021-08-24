@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MapContainer = styled.div`
-  flex-basis: 70%;
+  flex-basis: 68%;
 
   button {
     background: transparent;
