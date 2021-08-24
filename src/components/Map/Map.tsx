@@ -28,8 +28,8 @@ const navControlStyle = {
 };
 
 const MAX_BOUNDS = [
-  [-83.35481383125015, 36.91392056290337], // New York
-  [-65.20539976875011, 48.19468396724202], // Maine,
+  [-83.35481383126, 36.9139205629], // New York
+  [-65.20539976876, 48.19468396725], // Maine,
 ];
 
 const isOutOfMaxBounds = (
