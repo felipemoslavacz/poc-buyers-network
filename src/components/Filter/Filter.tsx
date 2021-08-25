@@ -22,6 +22,7 @@ const STATES = [
     id: "NY",
     label: "New York",
     coordinates: [-74.0060152, 40.7127281],
+    zoom: 7,
   },
   {
     id: "RI",
@@ -37,10 +38,9 @@ const Filter = () => {
       <Label>Sort By State:</Label>
       <Select
         onChange={(e) => {
-          let zoom = 8;
-          let coordinates = STATES.find(
-            (state) => state.id === e.target.value
-          )?.coordinates;
+          const state = STATES.find((state) => state.id === e.target.value);
+          let zoom = state?.zoom ?? 8;
+          let coordinates = state?.coordinates;
 
           if (!coordinates) {
             coordinates = [-74.2801068, 42.8107476];
