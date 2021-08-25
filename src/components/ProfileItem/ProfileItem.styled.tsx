@@ -13,7 +13,13 @@ export const ProfileItemContainer = styled.div`
 
   &:hover,
   &.active {
-    background: rgba(89, 195, 120, 0.35);
+    background: rgba(89, 195, 120, 0.2);
+  }
+
+  &.active {
+    svg {
+      fill: #59c378;
+    }
   }
 
   h3 {
@@ -30,8 +36,15 @@ export const ProfileItemContainer = styled.div`
     color: #337cff;
     cursor: pointer;
     border: none;
+    font-size: 11px;
     margin: 0;
     padding: 0;
+  }
+
+  svg {
+    width: 10px;
+    margin-right: 5px;
+    fill: #565656;
   }
 `;
 

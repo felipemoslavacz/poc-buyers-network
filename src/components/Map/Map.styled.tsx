@@ -14,7 +14,7 @@ export const MapContainer = styled.div`
   }
 
   .mapboxgl-popup {
-    max-width: 200px;
+    max-width: 280px;
   }
 
   .mapboxgl-popup-content {
