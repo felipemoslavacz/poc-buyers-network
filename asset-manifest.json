@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/poc-buyers-network/static/js/main.4f4e0f64.chunk.js",
-    "main.js.map": "/poc-buyers-network/static/js/main.4f4e0f64.chunk.js.map",
+    "main.js": "/poc-buyers-network/static/js/main.527081db.chunk.js",
+    "main.js.map": "/poc-buyers-network/static/js/main.527081db.chunk.js.map",
     "runtime-main.js": "/poc-buyers-network/static/js/runtime-main.5415567f.js",
     "runtime-main.js.map": "/poc-buyers-network/static/js/runtime-main.5415567f.js.map",
     "static/css/2.5bebb84e.chunk.css": "/poc-buyers-network/static/css/2.5bebb84e.chunk.css",
@@ -12,6 +12,7 @@
     "static/js/2.d576b23c.chunk.js.LICENSE.txt": "/poc-buyers-network/static/js/2.d576b23c.chunk.js.LICENSE.txt",
     "static/js/mapbox-gl-csp-worker.7a51a780.worker.js": "/poc-buyers-network/static/js/mapbox-gl-csp-worker.7a51a780.worker.js",
     "static/js/mapbox-gl-csp-worker.7a51a780.worker.js.map": "/poc-buyers-network/static/js/mapbox-gl-csp-worker.7a51a780.worker.js.map",
+    "static/media/location.f4ef7213.svg": "/poc-buyers-network/static/media/location.f4ef7213.svg",
     "static/media/logo.abd58d38.svg": "/poc-buyers-network/static/media/logo.abd58d38.svg",
     "static/media/mapbox-marker-icon-gray.6194924c.svg": "/poc-buyers-network/static/media/mapbox-marker-icon-gray.6194924c.svg",
     "static/media/mapbox-marker-icon-green.bb5b35b4.svg": "/poc-buyers-network/static/media/mapbox-marker-icon-green.bb5b35b4.svg"
@@ -20,6 +21,6 @@
     "static/js/runtime-main.5415567f.js",
     "static/css/2.5bebb84e.chunk.css",
     "static/js/2.d576b23c.chunk.js",
-    "static/js/main.4f4e0f64.chunk.js"
+    "static/js/main.527081db.chunk.js"
   ]
 }
