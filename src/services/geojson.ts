@@ -25,12 +25,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-71.967, 41.395],
+        coordinates: [-71.481167, 41.362865],
       },
       properties: {
-        title: "Name of Farmer/Farm 1",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Point Judith Kelp Company",
+        location: "1460 Ocean Rd, Narragansett, RI 02882",
+        description: "Species: Sugar Kelp, Hijiki, Irish Moss",
       },
     },
     {
@@ -38,12 +38,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-71.659, 41.459],
+        coordinates: [-69.951307, 41.688419],
       },
       properties: {
-        title: "Name of Farmer/Farm 2",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Chatham Kelp",
+        location: "45 Barcliff Ave, Chatham, MA 02633",
+        description: "Species: Sugar Kelp",
       },
     },
     {
@@ -51,12 +51,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-70.819, 41.677],
+        coordinates: [-71.3857768, 41.5099226],
       },
       properties: {
-        title: "Name of Farmer/Farm 3",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Ocean State Oysters",
+        location: "Jamestown, Rhode Island, USA",
+        description: "Species: Oysters",
       },
     },
     {
@@ -64,12 +64,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-70.425, 41.69],
+        coordinates: [-72.363851, 41.09771],
       },
       properties: {
-        title: "Name of Farmer/Farm 4",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Widow's Hole Oyster Farm",
+        location: "307 Flint St., Greenport NY 11944",
+        description: "Species: Oyster",
       },
     },
     {
@@ -77,12 +77,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-70.682, 41.984],
+        coordinates: [-71.484931, 41.430386],
       },
       properties: {
-        title: "Name of Farmer/Farm 5",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Rhody Wild Sea Gardens",
+        location: "91 Point Judith Road",
+        description: "Species: Sugar Kelp",
       },
     },
     {
@@ -90,12 +90,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-70.777, 42.64],
+        coordinates: [-71.557765, 41.172034],
       },
       properties: {
-        title: "Name of Farmer/Farm 6",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Block Island Kelp",
+        location: "17 Water St, New Shoreham, RI 02807",
+        description: "Species: Sugar Kelp",
       },
     },
     {
@@ -103,51 +103,12 @@ const geojson: IGeoJson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-70.76, 43.08],
+        coordinates: [-72.738692, 40.805322],
       },
       properties: {
-        title: "Name of Farmer/Farm 7",
-        location: "Location",
-        description: "Type of Species: name, name",
-      },
-    },
-    {
-      id: 8,
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-69.234, 44.074],
-      },
-      properties: {
-        title: "Name of Farmer/Farm 8",
-        location: "Location",
-        description: "Type of Species: name, name",
-      },
-    },
-    {
-      id: 9,
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-69.182, 44.135],
-      },
-      properties: {
-        title: "Name of Farmer/Farm 9",
-        location: "Location",
-        description: "Type of Species: name, name",
-      },
-    },
-    {
-      id: 10,
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-68.926, 44.463],
-      },
-      properties: {
-        title: "Name of Farmer/Farm 10",
-        location: "Location",
-        description: "Type of Species: name, name",
+        title: "Great Gun Oysters",
+        location: "32 Driftwood Lane East Moriches, NY 11940",
+        description: "Species: Oysters",
       },
     },
   ],

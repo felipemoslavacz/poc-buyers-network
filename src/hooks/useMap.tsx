@@ -48,9 +48,9 @@ export function useMap() {
 
 function useProviderMap() {
   const [viewport, setViewport] = useState<IViewport>({
-    latitude: 42.8107476,
-    longitude: -74.2801068,
-    zoom: 5,
+    latitude: 41.31003121981365,
+    longitude: -71.40086692940942,
+    zoom: 7,
   });
   const [selectedMarker, setSelectedMarker] = useState<IFeatures | null>(null);
   const [profiles, setProfiles] = useState(geojson);
