@@ -1,7 +1,7 @@
 import { useMap } from "../../hooks/useMap";
 
 import { ProfileItem } from "../index";
-import { ProfileContainer } from "./ProfilePanel.styled";
+import { ProfileContainer, ButtonResults } from "./ProfilePanel.styled";
 
 const ProfilePanel = () => {
   const {
@@ -11,8 +11,14 @@ const ProfilePanel = () => {
     handleFlyToInterpolator,
   } = useMap();
 
+  function resetMap() {
+    const coordinates = [-71.40086692940942, 41.31003121981365];
+    handleFlyToInterpolator(coordinates, 7);
+  }
+
   return (
     <ProfileContainer>
+      <ButtonResults onClick={() => resetMap()}>Show all results</ButtonResults>
       {profiles.features.length > 0 ? (
         profiles.features.map((feature) => {
           const {
