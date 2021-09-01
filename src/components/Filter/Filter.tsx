@@ -1,4 +1,4 @@
-import { FilterContainer, Select, Label } from "./Filter.styled";
+import { FilterContainer, Select, Label, Divisor } from "./Filter.styled";
 
 import { useMap } from "../../hooks/useMap";
 
@@ -32,9 +32,14 @@ const STATES = [
 ];
 
 const Filter = () => {
-  const { handleFlyToInterpolator, setSelectedMarker } = useMap();
+  const { handleFlyToInterpolator, setSelectedMarker, geojson, profiles } =
+    useMap();
   return (
     <FilterContainer>
+      <span>
+        Showing {profiles.features.length} of {geojson.features.length} results
+      </span>
+      <Divisor>|</Divisor>
       <Label>Sort By State:</Label>
       <Select
         onChange={(e) => {
